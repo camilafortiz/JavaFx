@@ -63,3 +63,14 @@ Según la documentación oficial, para ejecutar este proyecto necesitas:
 
 ---
 *Proyecto educativo diseñado siguiendo las especificaciones de OpenJFX.*
+
+
+
+
+
+
+
+## MUESTRA
+<img width="626" height="201" alt="Captura de pantalla 2026-07-01 025442" src="https://github.com/user-attachments/assets/6bc50674-ebd2-44a0-9073-123f8dbdb0a0" />
+
+
