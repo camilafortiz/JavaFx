@@ -30,6 +30,32 @@ A diferencia de configuraciones complejas, este "Hola Mundo" utiliza código Jav
 - **`StackPane`**: El nodo raíz que centra los elementos automáticamente.
 - **`System.getProperty`**: Muestra dinámicamente en pantalla las versiones exactas de Java y JavaFX que se están ejecutando en la máquina local.
 
+  🛠️ Compilación y Ejecución (Línea de Comandos)
+Para compilar y ejecutar este proyecto manualmente desde la terminal (siguiendo la guía de OpenJFX), debes definir la ruta hacia tu carpeta del JavaFX SDK mediante la variable de entorno PATH_TO_FX.
+
+## 1. Configurar la variable de entorno (Apuntar al SDK de JavaFX)
+En Windows (CMD):
+
+```text
+
+
+set PATH_TO_FX="C:\Ruta\A\Tu\javafx-sdk\lib"
+```
+##
+En Linux / macOS:
+```text
+export PATH_TO_FX=/Ruta/A/Tu/javafx-sdk/lib
+```
+##  2. Compilar el código fuente
+Desde la raíz del proyecto (JavaFxGith/), compila el archivo apuntando a los módulos de JavaFX correspondientes:
+```text
+javac --module-path %PATH_TO_FX% --add-modules javafx.controls src/main/java/HelloFX.java
+```
+## 3. Ejecutar la aplicación
+Una vez compilado, ejecuta la clase generada usando el motor gráfico:
+```text
+java --module-path %PATH_TO_FX% --add-modules javafx.controls -cp src/main/java HelloFX
+```
 ## 🛠️ Requisitos
 Según la documentación oficial, para ejecutar este proyecto necesitas:
 1. **Java SE JDK** (Versión 11 o superior).
